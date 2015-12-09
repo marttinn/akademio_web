@@ -1,3 +1,9 @@
+@import 'materialize';
+@import 'ember-cli-materialize';
+@import "bower_components/font-awesome/scss/font-awesome";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -70,8 +76,10 @@ body {
   cursor: pointer;
 }
 
+$primary-color: #5ac8e3;
+
 ​ .firstColor {
-  background-color: #5ac8e3!important;
+  background-color: $primary-color;
 }
 .secondColor {
   background-color: #68c9d0!important;
