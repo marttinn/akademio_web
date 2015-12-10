@@ -1,12 +1,4 @@
-  <nav class="cyan lighten-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" style="text-decoration:none;"class="brand-logo">Akademio</a>
-      <ul class="right hide-on-med-and-down">
-      </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" style="text-decoration:none;" data-activates="nav-mobile" class="button-collapse">
-        {{fa-icon "bars" size=lg}}
-      </a>
-    </div>
-  </nav>
+{{#each model as |course|}}
+  <h2>{{course.title}}</h2>
+  <p>Title: {{course.owner}}</p>
+{{/each}}
